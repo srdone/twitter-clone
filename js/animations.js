@@ -61,5 +61,20 @@ $(document).ready(function () {
     
     $('#stream').prepend(tweetTemplate);
   }
+  
+  $('.tweet').hover(function () {
+    console.log('in enter hover');
+    $(this).find('.stats').slideDown();
+  }, function() {
+    console.log('in exit hover');
+    if (!$(this).find('.reply .tweet-compose').is(':focus')) {
+      $(this).find('.stats').slideUp(); 
+      $(this).find('.reply').slideUp();
+    }
+  })
+  .click(function () {
+    console.log('in click');
+    $(this).find('.reply').slideDown();
+  });
 
 });

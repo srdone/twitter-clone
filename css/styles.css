@@ -262,6 +262,7 @@ body {
 .stats {
     margin: 12px 0 12px 42px;
     border-top: 1px solid #e8e8e8;
+    display: none;
 }
 
 .stats, .stats div {
@@ -307,6 +308,7 @@ body {
     position: relative;
     clear: both;
     padding-left: 43px;
+    display: none;
 }
 
 .reply .avatar {
